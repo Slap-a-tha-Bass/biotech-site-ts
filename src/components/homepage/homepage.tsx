@@ -1,6 +1,18 @@
+import { trpc } from "@/utils/trpc";
 import Image from "next/image";
 import styles from "./homepage.module.css";
+
 export default function Homepage() {
+  // const { data, isLoading } = trpc.useQuery(["hello"]);
+  
+  // if (isLoading) {
+  //   return <div>Loading...</div>;
+  // }
+  // if (data) {
+  //   return (
+  //     <div>{data?.greeting}</div>
+  //   );
+  // }
   return (
     <>
       <div className="relative pt-32">

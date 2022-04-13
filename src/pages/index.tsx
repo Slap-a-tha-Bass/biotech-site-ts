@@ -4,8 +4,16 @@ import Footer from "@/components/footer/footer";
 import Homepage from "@/components/homepage/homepage";
 import Navbar from "@/components/navbar/navbar";
 import styles from "@/styles/Home.module.css";
+import { trpc } from "@/utils/trpc";
 
 export default function Home() {
+  // const { data, isLoading } = trpc?.useQuery(["hello"]);
+  // if (isLoading) {
+  //   return <div>Loading...</div>;
+  // }
+  // if (data) {
+  //   return <div>{data.greeting}</div>;
+  // }
   return (
     <div className={styles.container}>
       <Head>
